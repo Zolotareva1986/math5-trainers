@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮 Тренажеры по математике 5 класс</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 40px 35px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #f1c40f;
+        }
+        .header h1 span {
+            color: #58d68d;
+        }
+        .header p {
+            color: #8899bb;
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+        .header .teacher {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 5px 18px;
+            background: rgba(241,196,15,0.1);
+            border-radius: 20px;
+            color: #f1c40f;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid rgba(241,196,15,0.15);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            padding: 24px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #e8edf5;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(241,196,15,0.2);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .card .icon {
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+        }
+        .card .title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #e8edf5;
+        }
+        .card .desc {
+            font-size: 0.8rem;
+            color: #667799;
+            margin-top: 4px;
+        }
+        .card .badge {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 3px 14px;
+            border-radius: 14px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+        .badge-basic { background: rgba(46,204,113,0.15); color: #58d68d; }
+        .badge-medium { background: rgba(241,196,15,0.15); color: #f1c40f; }
+        .badge-hard { background: rgba(231,76,60,0.15); color: #ec7063; }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(241,196,15,0.1);
+            text-align: center;
+            color: #667799;
+            font-size: 0.8rem;
+        }
+        .footer strong {
+            color: #f1c40f;
+        }
+        .footer .highlight {
+            color: #58d68d;
+        }
+        .access-info {
+            background: rgba(241,196,15,0.05);
+            border: 1px solid rgba(241,196,15,0.1);
+            border-radius: 12px;
+            padding: 12px 20px;
+            text-align: center;
+            margin-top: 15px;
+            color: #8899bb;
+            font-size: 0.9rem;
+        }
+        .access-info strong {
+            color: #f1c40f;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px 15px; }
+            .header h1 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .card { padding: 16px 12px; }
+            .card .icon { font-size: 2rem; }
+        }
+        @media (max-width: 400px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧮 <span>Математика</span> 5 класс</h1>
+            <p>Интерактивные тренажеры для подготовки к ВПР и не только</p>
+            <div class="teacher">✏️ Разработчик: Золотарева А.В.</div>
+        </div>
+
+        <div class="access-info">
+            🔑 <strong>Кодовое слово</strong> для доступа к тренажерам вы получаете 
+            в беседе VK перед началом урока
+        </div>
+
+        <div class="grid">
+            <a href="encrypted/drobi_+i-_s_odnim_znamenatelem.html" class="card">
+                <div class="icon">🍕</div>
+                <div class="title">Дроби: сложение и вычитание</div>
+                <div class="desc">Одинаковые знаменатели</div>
+                <span class="badge badge-basic">⭐ Базовый</span>
+            </a>
+
+            <a href="encrypted/drobi_+_i_-_s_raznim_znamenatelem.html" class="card">
+                <div class="icon">🧮</div>
+                <div class="title">Дроби: сложение и вычитание</div>
+                <div class="desc">Разные знаменатели</div>
+                <span class="badge badge-medium">⭐⭐ Сложный</span>
+            </a>
+
+            <a href="encrypted/SOKRATI_drobi.html" class="card">
+                <div class="icon">✂️</div>
+                <div class="title">Сокращение дробей</div>
+                <div class="desc">Разложение на множители и последовательное сокращение</div>
+                <span class="badge badge-medium">⭐⭐ Сложный</span>
+            </a>
+
+            <a href="encrypted/UMNOZENIE_drobi_na_natur_chislo.html" class="card">
+                <div class="icon">✖️</div>
+                <div class="title">Умножение дроби на натуральное число</div>
+                <div class="desc">С подсказками и без</div>
+                <span class="badge badge-medium">⭐⭐ Сложный</span>
+            </a>
+
+            <a href="encrypted/UMNOZENIE_i_DELENIE_drobey.html" class="card">
+                <div class="icon">✖️➗</div>
+                <div class="title">Умножение и деление дробей</div>
+                <div class="desc">С подсказками и без</div>
+                <span class="badge badge-hard">⭐⭐⭐ Профи</span>
+            </a>
+
+            <a href="encrypted/zadannij_znamenatel.html" class="card">
+                <div class="icon">🔢</div>
+                <div class="title">Приведение дробей к знаменателю</div>
+                <div class="desc">Дроби и натуральные числа</div>
+                <span class="badge badge-basic">⭐ Базовый</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <strong>© 2026</strong> Все права защищены • 
+            <span class="highlight">Для использования только в учебных целях</span>
+        </div>
+    </div>
+</body>
+</html>
